@@ -1,0 +1,8 @@
+public: Este es el modificador de acceso menos restrictivo. Cuando se declara una clase, método, variable o constructor como público, está disponible para cualquier otra clase en cualquier paquete.
+
+private: Este es el modificador de acceso más restrictivo. Cuando se declara una clase, método, variable o constructor como privado, solo está disponible dentro de la misma clase. No se puede acceder a elementos privados desde clases externas
+
+protected: Cuando se declara un elemento como protegido, este está disponible para las clases dentro del mismo paquete y también para las subclases (clases hijas) incluso si están en un paquete diferente.
+
+default (o sin modificador): Si no se especifica ningún modificador de acceso, se utiliza el modificador de acceso por defecto. Los elementos con acceso por defecto son accesibles solo dentro del mismo paquete. No pueden ser accedidos desde clases fuera del paquete, incluso si son clases hijas de otra clase en el mismo paquete. Por
+
