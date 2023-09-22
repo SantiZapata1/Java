@@ -7,7 +7,7 @@ public class Aplicacion {
     public static void main(String[] args) {
 
         //inicializacion del juego
-        JuegoAdivinaNumero juego1 = new JuegoAdivinaNumero(5,4);
+        JuegoAdivinaNumero juego1 = new JuegoAdivinaNumero(7,6);
 
         //metodo para jugar
         juego1.Juega();

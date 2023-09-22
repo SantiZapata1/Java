@@ -1,0 +1,13 @@
+// Escritura de un objeto serializado
+ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("miArchivo.obj"));
+outputStream.writeObject(objetoSerializado);
+outputStream.close();
+
+// Lectura de un objeto serializado
+ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("miArchivo.obj"));
+ObjetoDeserializado objeto = (ObjetoDeserializado) inputStream.readObject();
+inputStream.close();
+
+
+video: https://classroom.google.com/c/NTA1NjEyNzgwNTU0/m/NTA1NjEyNzgwNjE3/details
+muy buen vidio
