@@ -150,7 +150,12 @@ interface SerializableIO<Tipo> {
 }
 
 //clase abstracta vehiculo
-abstract class Vehiculo {
+abstract class Vehiculo implements java.io.Serializable{
+
+
+    public Vehiculo() {
+
+    }
 
     //atributos
     String marca, modelo;
@@ -185,7 +190,7 @@ abstract class Vehiculo {
 }
 
 //subclase coche
-class Coche extends Vehiculo{
+class Coche extends Vehiculo implements java.io.Serializable{
 
     //constructor
     Coche(String marca, String modelo, Double precio){
@@ -281,6 +286,7 @@ class Concesionaria implements Serializable, SerializableIO<Concesionaria>{
             System.out.println("Los datos se han guardado en " + nombreArchivo + " correctamente.");
         } catch (IOException e) {
             System.err.println("Error al guardar los datos en " + nombreArchivo + ": " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -301,6 +307,3 @@ class Concesionaria implements Serializable, SerializableIO<Concesionaria>{
 
 
 }
-
-
-
