@@ -1,7 +1,7 @@
 package arrayList.Basico;//package practicas.arrayList.colecciones;
 import java.util.ArrayList;
 
-public class arrayList {
+public class BasicoArrayList {
 
     /*   metodos de array list
 

@@ -30,6 +30,7 @@ public class GestorCuentas {
             }
         }
     }
+
     public void eliminarCuentaSociedad(int numCuenta){
         for (int i = 0; i < cuentaSociedadArrayList.size(); i++) {
             if (cuentaSociedadArrayList.get(i).getNumCuenta()==numCuenta) {

@@ -1,6 +1,6 @@
 package ArchivosDirectorios;
 import java.io.File;
-public class ejemploBase {
+public class BasicoArchivos {
 
 
     public static void main(String[] args) {

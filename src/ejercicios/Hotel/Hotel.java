@@ -14,8 +14,10 @@ public class Hotel implements Serializable {
 
         System.out.println("\n");
 
-        nombreHotel("src" + File.separator + "ejercicios" + File.separator +"Hotel"+File.separator+"archivo.txt");
+        String direccionArchivo ="src" + File.separator + "ejercicios" + File.separator +"Hotel"+File.separator+"archivo.txt";
 
+        escribirTextoEnArchivo(direccionArchivo,"HOTEL TRANSILVANIA");
+        System.out.println(leerArchivo(direccionArchivo));
 
         //en el hotel creamo un arrayList de habitaciones
         ArrayList<Habitacion> listaHabitaciones = new ArrayList<Habitacion>();
@@ -163,27 +165,33 @@ public class Hotel implements Serializable {
             System.out.println(cont+" - "+habitacion.mostrarInformacion());
         }
     }
-    public static void nombreHotel(String nombreArchivo){
 
-        try{
-
-            // Abrir un archivo para lectura
-            BufferedReader br = new BufferedReader(new FileReader(nombreArchivo));
-
-            String linea;
-            // Leer líneas completas del archivo
-            while ((linea = br.readLine()) != null) {
-                System.out.println("nombre Hotel: "+linea);
+    public static void escribirTextoEnArchivo(String nombreArchivo, String texto) {
+            try (BufferedWriter escritor = new BufferedWriter(new FileWriter(nombreArchivo, false))) {
+                escritor.write(texto);
+                System.out.println("Texto escrito en " + nombreArchivo + " correctamente.");
+            } catch (IOException e) {
+                System.err.println("Error al escribir el texto en " + nombreArchivo + ": " + e.getMessage());
+                e.printStackTrace();
             }
-
-            // Cerrar el BufferedReader
-            br.close();
-        }catch (Exception e){
-            e.printStackTrace();
         }
 
+    public static String leerArchivo(String nombreArchivo) {
+            StringBuilder contenido = new StringBuilder();
 
-    }
+            try (BufferedReader lector = new BufferedReader(new FileReader(nombreArchivo))) {
+                String linea;
+                while ((linea = lector.readLine()) != null) {
+                    contenido.append(linea).append("\n");
+                }
+            } catch (IOException e) {
+                System.err.println("Error al leer el archivo " + nombreArchivo + ": " + e.getMessage());
+                e.printStackTrace();
+            }
+
+            return contenido.toString();
+        }
+
 
     // Método para serializar un ArrayList
     public static void serializarArrayList(ArrayList<Habitacion> lista, String nombreArchivo) {
