@@ -1,3 +1,5 @@
+package estructurasLineales;
+
 /**
  * Clase Lista simplemente enlazada.
  */

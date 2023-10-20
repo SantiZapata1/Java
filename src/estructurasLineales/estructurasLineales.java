@@ -1,4 +1,4 @@
-//hacer: ver si incluye un cierto valor, eliminar valor y eliminar posicion.
+package estructurasLineales;//hacer: ver si incluye un cierto valor, eliminar valor y eliminar posicion.
 
 
 class Nodo {
