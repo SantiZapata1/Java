@@ -1,0 +1,19 @@
+al: creacion de arraylist
+
+menu: creacion de menu de administracion
+
+input: estructura de lectura de datos
+
+agregar: construye metodo para agregar objeto a un arrayList
+
+eliminar: construye metodo para eliminar objeto de un arraylist
+
+editar: construye el metodo para editar datos de un objeto de un arraylist
+
+mostrar: recorre todos los elementos de un arraylist y ejecuta en cada uno su metodo tostring
+
+serializar: metodo para serializar objeto en un archivo especificado
+
+serializarPro: idem pero si no existe el archivo lo crea
+
+deserializar: metodo para deserializar objetos en un archivo especificado

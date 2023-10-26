@@ -1,0 +1,8 @@
+Usa private para la mayor privacidad: Si un miembro de una clase no necesita ser accedido desde fuera de esa clase (incluyendo sus subclases), deberías declararlo como private. Esto ocultará el miembro por completo.
+
+Usa protected para la herencia controlada: Si deseas que un miembro sea accesible solo para las subclases de la clase actual y no desde fuera de esas subclases, puedes usar protected.
+
+Usa package-private (sin modificador) para el acceso dentro del paquete: Si deseas que un miembro sea accesible solo dentro del mismo paquete, pero no desde fuera del paquete, puedes declararlo sin un modificador de acceso explícito. Esto se conoce como acceso "paquete-paquete" o "package-private".
+
+Usa public con moderación: Deja los miembros como public solo si realmente necesitas que sean accesibles desde cualquier parte del programa. Los miembros públicos son la forma más abierta de acceso y pueden romper la encapsulación si se usan en exceso.
+
