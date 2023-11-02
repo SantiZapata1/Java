@@ -1,0 +1,15 @@
+
+En Java, para trabajar con MySQL, hay algunas declaraciones y clases comunes que se utilizan con frecuencia para interactuar con una base de datos.
+Aquí tienes una lista de las declaraciones y clases más comunes:
+
+Conexión a la Base de Datos:
+
+Connection: Esta interfaz se utiliza para establecer la conexión con la base de datos.
+Ejecución de Consultas:
+
+Statement: Se utiliza para ejecutar sentencias SQL simples.
+PreparedStatement: Similar a Statement, pero permite la inserción segura de parámetros en la consulta.
+CallableStatement: Se utiliza para ejecutar procedimientos almacenados en la base de datos.
+Resultados de Consultas:
+
+ResultSet: Representa un conjunto de resultados de una consulta SQL y se utiliza para acceder a los datos recuperados.

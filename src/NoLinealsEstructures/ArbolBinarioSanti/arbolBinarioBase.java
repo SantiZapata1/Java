@@ -1,3 +1,4 @@
+package NoLinealsEstructures.ArbolBinarioSanti;
 /*Estos métodos son formas comunes de explorar y visitar los nodos de un árbol binario,
 y cada uno tiene aplicaciones específicas en algoritmos y procesamiento de datos.
 Dependiendo del problema que estés resolviendo,
@@ -13,7 +14,10 @@ public class arbolBinarioBase {
         raiz.izquierdo = new Nodo(2);
         raiz.derecho = new Nodo(3);
 
+        raiz.recorridoPreorden(raiz);
+        raiz.recorridoInorden(raiz);
         raiz.recorridoPostorden(raiz);
+
     }
 }
 
@@ -29,7 +33,7 @@ class Nodo {
         derecho = null;
     }
 
-    //Recorrido en Preorden
+    //Recorrido en Preorden                 RAIZ IZQUIERDA DERECHA
 
     //El recorrido en preorden se implementa visitando el nodo raíz, luego llamando
     // al método en el subárbol izquierdo y, finalmente, llamando al método en el subárbol derecho.
@@ -42,7 +46,7 @@ class Nodo {
         }
     }
 
-    //Recorrido en Inorden
+    //Recorrido en Inorden                IZQUIERDA RAIZ DERECHA
 
     //El recorrido en inorden se implementa llamando al método en el subárbol izquierdo,
     // luego visitando el nodo raíz y, finalmente, llamando al método en el subárbol derecho.
@@ -55,7 +59,7 @@ class Nodo {
         }
     }
 
-    //Recorrido en Postorden
+    //Recorrido en Postorden              IZQUIERDA DERECHA RAIZ
 
     //El recorrido en postorden se implementa llamando al método en el subárbol izquierdo,
     //luego llamando al método en el subárbol derecho y, finalmente, visitando el nodo raíz.

@@ -1,0 +1,18 @@
+Consultas: Las consultas SQL se utilizan para recuperar datos de una base de datos.
+
+SELECT: Especifica las columnas que deseas recuperar.
+FROM: Indica la tabla de la que deseas recuperar datos.
+WHERE (opcional): Filtra los resultados basados en una condición.Permite filtrar los resultados basados en una condición.
+
+Inserción de Datos: Para agregar datos a una tabla, se usa la declaración INSERT.
+
+Actualización de Datos: La declaración UPDATE se usa para modificar datos existentes en una tabla.
+
+Eliminación de Datos: La declaración DELETE permite eliminar registros de una tabla.
+
+Ordenar Datos: La cláusula ORDER BY se utiliza para ordenar los resultados en función de una o más columnas.
+
+Funciones SQL: SQL ofrece muchas funciones integradas que se pueden utilizar en consultas. Por ejemplo, COUNT para contar filas o SUM para sumar valores.
+
+
+

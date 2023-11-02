@@ -7,7 +7,7 @@ public class Cola {
 
     private Nodo primero;
     private Nodo ultimo;
-    private int tamaño;
+    public int tamaño;
 
     public Cola() {
         this.primero = null;
